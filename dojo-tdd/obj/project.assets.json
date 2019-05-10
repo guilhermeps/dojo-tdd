@@ -5713,28 +5713,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\guilhermeps\\.nuget\\packages\\": {},
+    "C:\\Users\\smarinho\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guilhermeps\\Desktop\\dojo-tdd\\dojo-tdd\\dojo-tdd.csproj",
+      "projectUniqueName": "c:\\Users\\smarinho\\Desktop\\projeto\\dojo-tdd\\dojo-tdd\\dojo-tdd\\dojo-tdd.csproj",
       "projectName": "dojo-tdd",
-      "projectPath": "C:\\Users\\guilhermeps\\Desktop\\dojo-tdd\\dojo-tdd\\dojo-tdd.csproj",
-      "packagesPath": "C:\\Users\\guilhermeps\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guilhermeps\\Desktop\\dojo-tdd\\dojo-tdd\\obj\\",
+      "projectPath": "c:\\Users\\smarinho\\Desktop\\projeto\\dojo-tdd\\dojo-tdd\\dojo-tdd\\dojo-tdd.csproj",
+      "packagesPath": "C:\\Users\\smarinho\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\smarinho\\Desktop\\projeto\\dojo-tdd\\dojo-tdd\\dojo-tdd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\guilhermeps\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\smarinho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
