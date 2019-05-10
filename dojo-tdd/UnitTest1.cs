@@ -31,6 +31,25 @@ namespace dojo_tdd
             Assert.True(Validacao.validaValor(cliente.segmento, operacao.valor));
         }
 
+        [Theory]
+        [ClassData(typeof(MassaDeDadoDeErroParaAplicacaoEmSegmentosAaG))]
+        public void DeveRetornarErroQuandoOValorDaAplicacaoForMenorDoQue5000ParaSegmentosDeAaG(double valor, string segmento, string msgErro)
+        {
+            var operacao = new Operacao();
+            operacao.valor = valor;
+            var cliente = new Cliente();
+            cliente.segmento = segmento;
+
+            try
+            {
+                Validacao.validaValor(cliente.segmento, operacao.valor);
+            }
+            catch (System.Exception ex)
+            {
+                Assert.Equal(msgErro, ex.Message);
+            }
+        }
+
     }
 
 
@@ -72,7 +91,11 @@ namespace dojo_tdd
         public static bool validaValor(string segmento, double valor)
         {
             List<string> valores = new List<string>() { "A", "B", "C", "D", "E", "F", "G" };
-            return valores.Contains(segmento) && valor >= 5000;
+            bool estaValido = valores.Contains(segmento) && valor >= 5000;
+
+            if (!estaValido) throw new Exception("O valor mínimo da aplicação para este segmento é de 5 Mil BRL");
+
+            return estaValido;
         }
     }
 }
