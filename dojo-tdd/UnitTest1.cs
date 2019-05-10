@@ -16,6 +16,19 @@ namespace dojo_tdd
             Assert.Equal(operacao.data.Date, dataHj.Date);
         }
 
+        [Fact]
+        public void deveValidarValorMinimoAplicacao()
+        {
+            var operacao = new Operacao();
+
+            operacao.valor = 6000;
+
+            var cliente = new Cliente();
+            cliente.segmento = "A";
+
+            Validacao.validaValor(cliente.segmento, operacao.valor);
+        }
+
     }
 
 
@@ -50,5 +63,12 @@ namespace dojo_tdd
         public Cliente cliente { get; set; }
         public Operacao operacao { get; set; }
         public Liquidacao liquidacao { get; set; }
+    }
+
+    public static class Validacao
+    {
+        public static boolean validaValor(string segmento, double valor){
+            return segmento.Equal("A") && valor < 5000;
+        }
     }
 }
