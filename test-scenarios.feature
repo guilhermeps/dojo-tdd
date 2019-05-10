@@ -7,3 +7,4 @@ Os tipos de aplicação devem ser iguais a “aplicação”, “resgate total�
 Os tipos de liquidação devem ser iguais a “tef”, “ted” e “nenhuma”
 Os dados relacionados a movimentação devem ser obrigatórios
 Dado que liquidação é igual a nenhuma os dados bancários devem ser iguais aos dados bancários de aplicação
+
