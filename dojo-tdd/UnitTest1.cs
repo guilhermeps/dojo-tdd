@@ -50,6 +50,13 @@ namespace dojo_tdd
             }
         }
 
+        [Theory]
+        [ClassData(typeof(MassaDeSucessoSegmento0ouZ))]
+        public void DeveRetornarSucessoQuandoOValorDaAplicacaoForMaiorDoQue50000ParaSegmento0ou(double valor, string segmento)
+        {
+
+        }
+
     }
 
 
