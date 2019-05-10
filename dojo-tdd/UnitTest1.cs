@@ -28,7 +28,7 @@ namespace dojo_tdd
             operacao.valor = valor;
             var cliente = new Cliente();
             cliente.segmento = segmento;
-            Assert.True(Validacao.validaValor(cliente.segmento, operacao.valor));
+            Assert.True(Validacao.validaValorAaG(cliente.segmento, operacao.valor));
         }
 
         [Theory]
@@ -42,7 +42,7 @@ namespace dojo_tdd
 
             try
             {
-                Validacao.validaValor(cliente.segmento, operacao.valor);
+                Validacao.validaValorAaG(cliente.segmento, operacao.valor);
             }
             catch (System.Exception ex)
             {
@@ -54,7 +54,11 @@ namespace dojo_tdd
         [ClassData(typeof(MassaDeSucessoSegmento0ouZ))]
         public void DeveRetornarSucessoQuandoOValorDaAplicacaoForMaiorDoQue50000ParaSegmento0ou(double valor, string segmento)
         {
-
+            var operacao = new Operacao();
+            operacao.valor = valor;
+            var cliente = new Cliente();
+            cliente.segmento = segmento;
+            Assert.True(Validacao.validaValor0ouZ(cliente.segmento, operacao.valor));
         }
 
     }
@@ -95,12 +99,22 @@ namespace dojo_tdd
 
     public static class Validacao
     {
-        public static bool validaValor(string segmento, double valor)
+        public static bool validaValorAaG(string segmento, double valor)
         {
             List<string> valores = new List<string>() { "A", "B", "C", "D", "E", "F", "G" };
             bool estaValido = valores.Contains(segmento) && valor >= 5000;
 
             if (!estaValido) throw new Exception("O valor mínimo da aplicação para este segmento é de 5 Mil BRL");
+
+            return estaValido;
+        }
+
+        public static bool validaValor0ouZ(string segmento, double valor)
+        {
+            List<string> valores = new List<string>() { "0", "Z" };
+            bool estaValido = valores.Contains(segmento) && valor >= 50000;
+
+            if (!estaValido) throw new Exception("O valor mínimo da aplicação para este segmento é de 50 Mil BRL");
 
             return estaValido;
         }
