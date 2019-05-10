@@ -1,0 +1,13 @@
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\bin\Debug\netcoreapp2.0\dojo-tdd.deps.json
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\bin\Debug\netcoreapp2.0\dojo-tdd.runtimeconfig.json
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\bin\Debug\netcoreapp2.0\dojo-tdd.runtimeconfig.dev.json
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\bin\Debug\netcoreapp2.0\dojo-tdd.dll
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\bin\Debug\netcoreapp2.0\dojo-tdd.pdb
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\obj\Debug\netcoreapp2.0\dojo-tdd.csproj.CoreCompileInputs.cache
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\obj\Debug\netcoreapp2.0\dojo-tdd.AssemblyInfoInputs.cache
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\obj\Debug\netcoreapp2.0\dojo-tdd.AssemblyInfo.cs
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\obj\Debug\netcoreapp2.0\dojo-tdd.dll
+c:\Users\guilhermeps\Desktop\dojo-tdd\dojo-tdd\obj\Debug\netcoreapp2.0\dojo-tdd.pdb
