@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace dojo_tdd
@@ -16,17 +17,18 @@ namespace dojo_tdd
             Assert.Equal(operacao.data.Date, dataHj.Date);
         }
 
-        [Fact]
-        public void deveValidarValorMinimoAplicacao()
+        [Theory]
+        [InlineData(6000, "A")]
+        [InlineData(5000, "B")]
+        [InlineData(7000, "C")]
+        [InlineData(8000, "G")]
+        public void deveValidarValorMinimoDe5000AplicacaoSegmentoAG(double valor, string segmento)
         {
             var operacao = new Operacao();
-
-            operacao.valor = 6000;
-
+            operacao.valor = valor;
             var cliente = new Cliente();
-            cliente.segmento = "A";
-
-            Validacao.validaValor(cliente.segmento, operacao.valor);
+            cliente.segmento = segmento;
+            Assert.True(Validacao.validaValor(cliente.segmento, operacao.valor));
         }
 
     }
@@ -67,8 +69,10 @@ namespace dojo_tdd
 
     public static class Validacao
     {
-        public static boolean validaValor(string segmento, double valor){
-            return segmento.Equal("A") && valor < 5000;
+        public static bool validaValor(string segmento, double valor)
+        {
+            List<string> valores = new List<string>() { "A", "B", "C", "D", "E", "F", "G" };
+            return valores.Contains(segmento) && valor >= 5000;
         }
     }
 }
